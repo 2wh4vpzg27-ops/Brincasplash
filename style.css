@@ -1,0 +1,676 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F4F7FB;
+    font-family:Arial, sans-serif;
+    color:#1F2937;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(135deg,#EAF7FF,#FFFFFF);
+    border-bottom:1px solid #D7E3EF;
+}
+
+/* NAVEGACIÓN A LA DERECHA */
+
+nav{
+    width:96%;
+    max-width:1550px;
+    margin:auto;
+    padding:22px 15px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:24px;
+    flex-wrap:wrap;
+}
+
+.nav-links a{
+    color:#1252A2;
+    text-decoration:none;
+    font-size:.95rem;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.nav-links a:hover{
+    color:#1E88E5;
+}
+
+/* HERO CONTENIDO */
+
+.hero-contenido{
+    width:96%;
+    max-width:1550px;
+    margin:auto;
+    min-height:490px;
+    padding:45px 15px 75px;
+    display:grid;
+    grid-template-columns:.95fr 1.05fr;
+    gap:70px;
+    align-items:center;
+}
+
+.hero-texto h1{
+    color:#1252A2;
+    font-family:'Baloo 2', cursive;
+    font-size:5.2rem;
+    line-height:.95;
+    letter-spacing:1px;
+    text-shadow:0 8px 18px rgba(18,82,162,.18);
+}
+
+.hero-texto p{
+    max-width:560px;
+    color:#475569;
+    font-size:1.22rem;
+    line-height:1.65;
+    margin:25px 0;
+}
+
+.hero-botones{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.btn-principal,
+.btn-secundario{
+    display:inline-block;
+    padding:13px 27px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.btn-principal{
+    background:#FFD93D;
+    color:#1252A2;
+    box-shadow:0 9px 20px rgba(0,0,0,.13);
+}
+
+.btn-principal:hover{
+    transform:translateY(-3px);
+    background:#25D366;
+    color:white;
+}
+
+.btn-secundario{
+    color:#1252A2;
+    border:2px solid #1252A2;
+}
+
+.btn-secundario:hover{
+    background:#1252A2;
+    color:white;
+}
+
+/* TARJETA LOGO GRANDE */
+
+.hero-logo-card{
+    background:white;
+    border-radius:32px;
+    min-height:330px;
+    padding:45px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 18px 45px rgba(15,23,42,.12);
+    border:1px solid #E2E8F0;
+}
+
+.hero-logo-card img{
+    width:230px;
+    max-width:100%;
+    height:auto;
+    margin-bottom:35px;
+}
+
+.hero-datos{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.hero-datos div{
+    background:#F1F7FE;
+    padding:16px;
+    border-radius:16px;
+}
+
+.hero-datos strong{
+    display:block;
+    color:#1252A2;
+    margin-bottom:6px;
+}
+
+.hero-datos span{
+    color:#64748B;
+    font-size:.9rem;
+    line-height:1.4;
+}
+
+/* MAIN */
+
+main{
+    width:96%;
+    max-width:1550px;
+    margin:auto;
+    padding:80px 15px;
+}
+
+/* ETIQUETAS */
+
+.etiqueta{
+    display:inline-block;
+    color:#1E88E5;
+    background:#E5F3FF;
+    padding:7px 13px;
+    border-radius:20px;
+    font-size:.85rem;
+    font-weight:bold;
+    margin-bottom:14px;
+}
+
+.etiqueta-clara{
+    color:#1252A2;
+    background:#FFD93D;
+}
+
+.seccion-info h2,
+.nosotros-texto h2,
+.seccion-titulo-linea h2{
+    color:#1252A2;
+    font-family:'Baloo 2', cursive;
+    font-size:2.45rem;
+    line-height:1.12;
+    margin-bottom:16px;
+}
+
+.seccion-info p,
+.nosotros-texto p{
+    color:#64748B;
+    line-height:1.7;
+    font-size:1.04rem;
+}
+
+/* BOTÓN DE TEXTO */
+
+.btn-linea{
+    display:inline-block;
+    color:#1252A2;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:24px;
+    border-bottom:2px solid #FFD93D;
+    padding-bottom:5px;
+}
+
+/* SECCIONES HORIZONTALES */
+
+.seccion-horizontal{
+    display:grid;
+    grid-template-columns:.55fr 1.45fr;
+    gap:45px;
+    align-items:center;
+    margin-bottom:105px;
+}
+
+/* CATÁLOGO */
+
+.catalogo-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.tarjeta{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(15,23,42,.10);
+    transition:.25s;
+}
+
+.tarjeta:hover{
+    transform:translateY(-7px);
+    box-shadow:0 20px 38px rgba(15,23,42,.16);
+}
+
+.tarjeta img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+    display:block;
+}
+
+.tarjeta-info{
+    padding:19px;
+    text-align:left;
+}
+
+.tarjeta-info h3{
+    color:#1252A2;
+    font-family:'Baloo 2', cursive;
+    font-size:1.35rem;
+    margin-bottom:8px;
+}
+
+.tarjeta-info p{
+    color:#64748B;
+    font-size:.93rem;
+    line-height:1.5;
+    min-height:62px;
+}
+
+.tarjeta-info a{
+    display:inline-block;
+    margin-top:16px;
+    background:#FFD93D;
+    color:#1252A2;
+    padding:9px 20px;
+    border-radius:25px;
+    text-decoration:none;
+    font-size:.92rem;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.tarjeta-info a:hover{
+    background:#25D366;
+    color:white;
+}
+
+/* VENTAJAS */
+
+.ventajas{
+    background:white;
+    padding:45px;
+    border-radius:28px;
+    box-shadow:0 12px 35px rgba(15,23,42,.08);
+    margin-bottom:105px;
+}
+
+.seccion-titulo-linea{
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    gap:35px;
+    margin-bottom:35px;
+}
+
+.seccion-titulo-linea p{
+    max-width:410px;
+    color:#64748B;
+    line-height:1.55;
+}
+
+.ventajas-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.ventaja{
+    background:#F4F8FD;
+    border-radius:18px;
+    padding:22px;
+    display:flex;
+    gap:15px;
+    align-items:flex-start;
+    transition:.25s;
+}
+
+.ventaja:hover{
+    transform:translateY(-5px);
+    background:#EAF4FF;
+}
+
+.ventaja i{
+    color:#1E88E5;
+    font-size:1.5rem;
+    margin-top:3px;
+}
+
+.ventaja h3{
+    color:#1252A2;
+    font-size:1rem;
+    margin-bottom:7px;
+}
+
+.ventaja p{
+    color:#64748B;
+    font-size:.88rem;
+    line-height:1.5;
+}
+
+/* NOSOTROS */
+
+.nosotros{
+    align-items:stretch;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:17px;
+}
+
+.info-card{
+    background:white;
+    padding:23px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(15,23,42,.08);
+}
+
+.info-card i{
+    color:#1E88E5;
+    font-size:1.45rem;
+    margin-bottom:14px;
+}
+
+.info-card h3{
+    color:#1252A2;
+    margin-bottom:8px;
+}
+
+.info-card p{
+    color:#64748B;
+    font-size:.9rem;
+    line-height:1.5;
+}
+
+/* UBICACIÓN */
+
+.ubicacion{
+    background:linear-gradient(100deg,#0E55AC,#0D3E87);
+    border-radius:28px;
+    padding:38px 45px;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+    box-shadow:0 16px 35px rgba(13,62,135,.24);
+}
+
+.ubicacion h2{
+    font-family:'Baloo 2', cursive;
+    font-size:2.1rem;
+    margin-bottom:8px;
+}
+
+.ubicacion p{
+    line-height:1.55;
+}
+
+.btn-mapa{
+    background:#FFD93D;
+    color:#1252A2;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:30px;
+    padding:13px 26px;
+    white-space:nowrap;
+    transition:.25s;
+}
+
+.btn-mapa:hover{
+    background:white;
+    transform:translateY(-3px);
+}
+
+/* FOOTER */
+
+footer{
+    background:#0D3E87;
+    padding:35px 20px;
+    display:flex;
+    justify-content:center;
+    gap:22px;
+    flex-wrap:wrap;
+}
+
+.contacto-item{
+    background:rgba(255,255,255,.14);
+    padding:13px 22px;
+    border-radius:35px;
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.contacto-item a{
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.contacto-item i{
+    font-size:1.65rem;
+}
+
+.fa-whatsapp{
+    color:#25D366;
+}
+
+.fa-instagram{
+    background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.fa-facebook-f{
+    color:#1877F2;
+}
+
+/* WHATSAPP FLOTANTE */
+
+.whatsapp-flotante{
+    width:59px;
+    height:59px;
+    border-radius:50%;
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#25D366;
+    box-shadow:0 10px 25px rgba(0,0,0,.22);
+    text-decoration:none;
+    z-index:100;
+    transition:.25s;
+}
+
+.whatsapp-flotante:hover{
+    transform:scale(1.08);
+}
+
+.whatsapp-flotante i{
+    color:white;
+    font-size:2rem;
+}
+
+/* TABLET */
+
+@media(max-width:1100px){
+
+    .hero-contenido{
+        gap:35px;
+    }
+
+    .hero-texto h1{
+        font-size:4.2rem;
+    }
+
+    .seccion-horizontal{
+        grid-template-columns:1fr;
+    }
+
+    .seccion-info{
+        max-width:650px;
+    }
+
+    .ventajas-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* CELULAR */
+
+@media(max-width:700px){
+
+    nav{
+        justify-content:center;
+        padding:18px 10px;
+    }
+
+    .nav-links{
+        justify-content:center;
+        gap:12px;
+    }
+
+    .nav-links a{
+        font-size:.85rem;
+    }
+
+    .hero-contenido{
+        grid-template-columns:1fr;
+        text-align:center;
+        padding:40px 10px 55px;
+    }
+
+    .hero-texto h1{
+        font-size:3.25rem;
+    }
+
+    .hero-texto p{
+        font-size:1.05rem;
+        margin:20px auto;
+    }
+
+    .hero-botones{
+        justify-content:center;
+    }
+
+    .hero-logo-card{
+        min-height:auto;
+        padding:30px 20px;
+    }
+
+    .hero-logo-card img{
+        width:180px;
+        margin-bottom:25px;
+    }
+
+    .hero-datos{
+        grid-template-columns:1fr;
+    }
+
+    main{
+        width:94%;
+        padding:55px 0;
+    }
+
+    .seccion-horizontal{
+        gap:28px;
+        margin-bottom:70px;
+    }
+
+    .seccion-info h2,
+    .nosotros-texto h2,
+    .seccion-titulo-linea h2{
+        font-size:2rem;
+    }
+
+    .catalogo-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:14px;
+    }
+
+    .tarjeta img{
+        height:130px;
+    }
+
+    .tarjeta-info{
+        padding:14px;
+    }
+
+    .tarjeta-info h3{
+        font-size:1.1rem;
+    }
+
+    .tarjeta-info p{
+        font-size:.82rem;
+        min-height:70px;
+    }
+
+    .tarjeta-info a{
+        margin-top:12px;
+        padding:8px 16px;
+    }
+
+    .ventajas{
+        padding:25px 18px;
+        margin-bottom:70px;
+    }
+
+    .seccion-titulo-linea{
+        display:block;
+        margin-bottom:25px;
+    }
+
+    .seccion-titulo-linea p{
+        margin-top:12px;
+    }
+
+    .ventajas-grid{
+        grid-template-columns:1fr;
+    }
+
+    .ventaja{
+        padding:18px;
+    }
+
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .ubicacion{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:30px 22px;
+    }
+
+    footer{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .contacto-item{
+        width:100%;
+        max-width:330px;
+        justify-content:center;
+    }
+}
